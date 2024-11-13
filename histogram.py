@@ -7,7 +7,7 @@ def plot_histogram(file_path, column_name):
 
     plt.figure(figsize=(10, 6))
     plt.hist(data[column_name], bins=20, color='skyblue', edgecolor='black')
-    plt.title('Histogram of IMDb  Ratings')
+    plt.title('Histogram of IMDb Ratings for films in Amazon Prime')
     plt.xlabel('IMDb Rating')
     plt.ylabel('Frequency')
     plt.grid(axis='y', alpha=0.75)
