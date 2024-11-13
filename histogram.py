@@ -7,8 +7,8 @@ def plot_histogram(file_path, column_name):
 
     plt.figure(figsize=(10, 6))
     plt.hist(data[column_name], bins=20, color='skyblue', edgecolor='black')
-    plt.title('Histogram of IMDb Average Ratings')
-    plt.xlabel('IMDb Average Rating')
+    plt.title('Histogram of IMDb  Ratings')
+    plt.xlabel('IMDb Rating')
     plt.ylabel('Frequency')
     plt.grid(axis='y', alpha=0.75)
     plt.savefig('./plots/film_ratings.png')
@@ -16,5 +16,4 @@ def plot_histogram(file_path, column_name):
 if __name__ == "__main__":
     csv_file_path = "./datasets/amazon_prime_films.csv"
 
-    # Plot the histogram for 'imdbAverageRating' column
     plot_histogram(csv_file_path, 'imdbAverageRating')
