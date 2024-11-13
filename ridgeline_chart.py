@@ -42,10 +42,16 @@ fig = ridgeplot(
     coloralpha=0.65,
     labels=sorted_neighborhoods,
     linewidth=2,
-    spacing=0.5
+    spacing=0.5,
 )
 
-fig.update_layout(height=1200, width=1500, title_text='Precios del alquiler en Barcelona por distrito en 2021', xaxis_title_text = 'Precio mensual (€)')
+fig.update_layout(
+    height=1200,
+    width=1500,
+    title_text='Precios del alquiler en Barcelona por distrito en 2021',
+    xaxis_title_text = 'Precio mensual (€)',
+    font_size=25,
+    showlegend=False)
 
 
 fig.write_image("./plots/barcelona_rent.png")
