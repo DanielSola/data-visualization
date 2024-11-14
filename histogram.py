@@ -1,6 +1,5 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-import os
 
 def plot_histogram(file_path, column_name):
     data = pd.read_csv(file_path)

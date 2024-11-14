@@ -74,12 +74,12 @@ labels = ["10", "25", "50", "75", "100", "125"]
 for size, label in zip(scaled_sizes, labels):
     ax.scatter([], [], color=marker_color, s=size, label=f'Cost of Living: {label}')
 
-# Plot data (Europe GeoDataFrame)
+# Plotear los datos
 europe_gdf.plot(ax=ax, color=country_color, edgecolor='#4A0D67')
 europe_gdf['centroid'].plot(ax=ax, color=marker_color, marker='o', markersize=europe_gdf['marker_size'])
 
-# Hide axes and add legend
+# Esconder ejes y leyenda
 plt.axis('off')
-plt.legend(loc='upper left', handletextpad=1, labelspacing=1.25, borderpad = 1.5)  # Adjust handletextpad and labelspacing for more space
+plt.legend(loc='upper left', handletextpad=1, labelspacing=1.25, borderpad = 1.5)
 plt.savefig('./plots/cost_of_living_by_country.png')
 

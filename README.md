@@ -1,42 +1,56 @@
-# Data Visualization Repository
+# Visualización de Datos. PEC 2
 
-Welcome to the Data Visualization Repository! This repository contains various data visualization projects and examples.
+Repositorio para la PEC 2 de la asignatura Visualización de Datos, del máster universitario en Ciencia de Datos de la UOC.
 
-## Table of Contents
+## Contenidos
 
-- [Introduction](#introduction)
-- [Visualizations](#visualizations)
+- [Introducción](#introducción)
+- [Visualizaciones](#visualizaciones)
+- [Referencias](#referencias)
 
-## Introduction
+## Introducción
 
-This repository showcases different data visualization techniques and tools. It aims to provide examples and templates for creating effective and visually appealing data visualizations.
+Este repositorio contiene las siguientes visualizaciones, así cómo el código para generarlas y los datasets utilizados:
 
-## Examples
-
-Here are some examples of the visualizations included in this repository:
 
 - Ridgeline Chart
 - Proportional Symbols Map
 - Histogram
 
-## Visualizations
+## Visualizaciones
 
-In this section, you'll find more detailed information about specific visualizations created in the repository.
+Las siguientes visualizaciones han sido realizadas en Python. El código utilizado se encuentra en este mismo repositorio.
 
-### Housing Prices in Barcelona
+### Puntuación en IMDb de las películas presentes en Amazon Prime
 
-One of the featured visualizations is a ridge plot highlighting the distribution of housing prices across different neighborhoods in Barcelona. This plot provides a clear comparison between areas, showcasing the variance in rent prices effectively.
+Este histograma muestra la distribución de la puntuación en IMDb para las películas disponibles en Amazon Prime. Permite entender cómo se distribuyen las puntuaciones y apreciar la calidad y diversidad de las películas ofrecidas por esta plataforma.
+
+* **Dataset**: [Amazon Prime Dataset](https://www.kaggle.com/datasets/octopusteam/full-amazon-prime-dataset)
+
+![Histograma](./plots/film_ratings.png)
+
+### Índice de coste de vida en Europa
+
+Esta visualización es un mapa de símbolos proporcionales que representa el Índice de Coste de Vida por país en Europa. El tamaño variable de los símbolos indica las diferencias en el coste de vida entre países, permitiendo identificar fácilmente aquellos con mayor y menor coste de vida, así como facilitar comparaciones.
+
+* **Dataset**: [Cost of Living Index Dataset](https://www.kaggle.com/datasets/myrios/cost-of-living-index-by-country-by-number-2024)
+
+![Mapa de símbolos proporcionales](./plots/europe_cost_of_living.png)
+
+### Distribución del precio del alquiler por distrito en Barcelona (2021)
+
+Esta visualización es un Ridgeline Chart que muestra la distribución del precio de los alquileres a través de diferentes distritos en Barcelona durante el año 2021. Permite realizar comparaciones entre distritos de forma sencilla.
+
+* **Dataset**: [Barcelona Housing Prices](https://www.kaggle.com/datasets/imanollaconcha/barcelona-fotocasa-housingprices)
 
 ![Housing Prices Plot](./plots/barcelona_rent.png)
 
-### Cost of Living Index in Europe
+## Referencias
 
-Another visualization available in the repository is a proportional symbols map representing the cost of living index by country in Europe. This map utilizes varying symbol sizes to indicate the differences in living costs across countries, offering an intuitive understanding of economic conditions on the continent.
+- Python [Python.org](https://www.python.org/)
+- Matplotlib - [Documentación](https://matplotlib.org/stable/contents.html)
+- Pandas - [Documentación](https://pandas.pydata.org/)
+- Numpy - [Documentación](https://numpy.org/doc/stable/user/index.html#user/)
+- Ridgeplot - [Documentación](https://ridgeplot.readthedocs.io/en/stable/)
 
-![Cost of Living Map](./plots/europe_cost_of_living.png)
-
-### IMDB Ratings of Films on Amazon Prime
-
-Featured as well is a histogram showing the distribution of IMDB ratings for films available on Amazon Prime. This visualization helps in understanding the general rating trends and the quality diversity of movies offered on the streaming platform.
-
-![IMDB Ratings Histogram](./plots/film_ratings.png)
+Es necesario tener instaladas las librerias especificadas en el archivo requirements.txt para utilizar este código.
